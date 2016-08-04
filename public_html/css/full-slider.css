@@ -1,0 +1,227 @@
+/*
+ * Start Bootstrap - Full Slider (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+html,
+body {
+    height: 100%;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+body {
+    background-color: #444;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+footer {
+    margin: 50px 0;
+} 
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-nav > li > a.selected {
+    color: #77ade6;
+    cursor: pointer;
+    background: url(../images/menu_bullet.png) no-repeat left;
+}
+
+.navbar-nav {
+    font-size: 1.8rem;
+}
+
+.nav > li > a {
+    padding: 10px 20px;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 19px;
+  height: 17px;
+  margin: 0px;
+  text-indent: -999px;
+  cursor: pointer;
+  background: url(../images/bullet.png) no-repeat left;
+}
+.carousel-indicators .active,
+.carousel-indicators :hover {
+  width: 19px;
+  height: 17px;
+  background: url(../images/bullet_hover.png) no-repeat left;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #77ade6;
+  cursor: pointer;
+  background: url(../images/menu_bullet.png) no-repeat left;
+}
+
+#myCarouselCover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 666;
+    top: 0px;
+    left: 0px;
+    background: url(../images/trans_black.png) repeat;
+}
+
+.carousel-control, .carousel-indicators {
+    z-index: 999;
+    cursor: pointer;
+}
+
+.title_container{
+    text-align:center;
+    position:absolute;
+    top:20%;
+    z-index:999;
+    left:0px;
+    width:100%;
+}
+.title{
+    font-family: 'Clicker Script', cursive;
+    font-size:120px;
+    color:#FFFFFF;
+    text-align:center;
+}
+.title span {
+    color: #77ade6;
+}
+.title_front{
+    font-weight:800;
+    font-size:24px;
+    color:#FFFFFF;
+    padding:0 0 30px 0;
+}
+.title_date{
+    color:#FFFFFF;
+    font-weight:800;
+    font-size:36px;
+    padding:20px 0 10px 0;
+}
+span.swirl_left{
+    display:inline-block;
+    background:url(../images/swirl_left.png) no-repeat left;
+    padding:0 0 0 130px;
+}
+span.swirl_right{
+    display:inline-block;
+    background:url(../images/swirl_right.png) no-repeat right;
+    padding:10px 130px 10px 0px;
+}
+.title_under{
+    color: #77ade6;
+    font-weight:800;
+    font-size:24px;
+    padding:30px 0 0 0;
+}
+
+.container {
+    width: 100%;
+    padding: 0px;
+}
+.countdown_container {
+    background-color: #77ade6;
+    height: auto;
+    padding: 20px 0;
+}
+.countdown_container h2 {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 60px 0 0 0;
+    font-size: 26px;
+}
+.hasCountdown {
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+}
+.countdown_rtl {
+	direction: rtl;
+}
+.countdown_holding span {
+	color: #888;
+}
+.countdown_row {
+	clear: both;
+	width: 100%;
+	padding:0px;
+	text-align: center;
+}
+.countdown_section {
+	display:inline-block;
+	text-align: center;
+	width:148px;
+	height:170px;
+	padding:0;
+	margin:0 12px;
+	background:url(../images/countdown_frame.png) no-repeat center;
+	text-align:center;
+	font-size:36px;
+	color:#FFFFFF;
+	text-transform:lowercase;
+}
+span.countdown_amount {
+	font-size:80px;
+	color:#FFFFFF;
+	font-weight:700;
+	letter-spacing:-0.5px;
+}
+.rsvp_button{
+	text-align:center;
+	font-size:30px;
+	font-weight:700;
+	margin:0 0 60px 0;
+}
+.rsvp_button a{
+	color:#FFFFFF;
+        text-decoration: none;
+}
+.rsvp_button a:hover{
+	color:#5d594d;
+        cursor: pointer;
+        
+}
+span.swirl_left_small{
+	display:inline-block;
+	background:url(../images/swirl_left_small.png) no-repeat left;
+	padding:0 0 0 100px;
+}
+span.swirl_right_small{
+	display:inline-block;
+	background:url(../images/swirl_right_small.png) no-repeat right;
+	padding:0 100px 0 0px;
+}
+.countdown_descr {
+	display: block;
+	width: 100%;
+}
+
+.title_under, .title_date, .title_front, .countdown_container, .countdown_rtl, .countdown_amount {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.countdown_row, .countdown_section{
+    font-family: 'Clicker Script'
+}
