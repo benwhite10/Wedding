@@ -4,6 +4,11 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+
+/*
+* === General ===
+*/
+
 html,
 body {
     height: 100%;
@@ -35,9 +40,15 @@ body {
     -o-background-size: cover;
 }
 
-footer {
-    margin: 50px 0;
-} 
+.full_width_centered{
+    width:1100px;
+    margin:auto;
+    padding:40px 0;
+}
+
+/*
+* === Navbar===
+*/
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-nav > li > a.selected {
     color: #77ade6;
@@ -57,6 +68,17 @@ footer {
     padding: 10px 20px;
 }
 
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #77ade6;
+  cursor: pointer;
+  background: url(../images/menu_bullet.png) no-repeat left;
+}
+
+/*
+* === Carousel ===
+*/
+
 .carousel-indicators li {
   display: inline-block;
   width: 19px;
@@ -73,13 +95,6 @@ footer {
   background: url(../images/bullet_hover.png) no-repeat left;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus {
-  color: #77ade6;
-  cursor: pointer;
-  background: url(../images/menu_bullet.png) no-repeat left;
-}
-
 #myCarouselCover {
     width: 100%;
     height: 100%;
@@ -94,6 +109,10 @@ footer {
     z-index: 999;
     cursor: pointer;
 }
+
+/*
+* === Title ===
+*/
 
 .title_container{
     text-align:center;
@@ -140,6 +159,10 @@ span.swirl_right{
     font-size:24px;
     padding:30px 0 0 0;
 }
+
+/*
+* === Countdown ===
+*/
 
 .container {
     width: 100%;
@@ -230,6 +253,10 @@ span.swirl_right_small{
     font-family: 'Clicker Script'
 }
 
+/*
+* === About ===
+*/
+
 .about_container {
     height: auto;
     min-height: 300px;
@@ -244,12 +271,6 @@ span.swirl_right_small{
     margin: auto;
     text-align: center;
     font-size: 120px;
-}
-
-.full_width_centered{
-    width:1100px;
-    margin:auto;
-    padding:40px 0;
 }
 
 .about_container > .full_width_centered {
@@ -337,10 +358,15 @@ span.about_picframe {
     -webkit-transition: opacity 0.7s, -webkit-transform 0.7s;
 }
 
+/*
+* === Footer ===
+*/
+
 .footer {
     width: 100%;
     height: auto;
     background: #444;
+    margin: 50px 0;
 }
 
 .footer_sign{
@@ -407,6 +433,10 @@ span.swirl_right_transparent{
 .footer_menu a:hover {
     text-decoration: none;
 }
+
+/*
+* === Bridal Party ===
+*/
 
 .bridal_party_container {
     width: 100%;
