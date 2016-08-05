@@ -45,6 +45,10 @@ footer {
     background: url(../images/menu_bullet.png) no-repeat left;
 }
 
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: absolute;
+}
+
 .navbar-nav {
     font-size: 1.8rem;
 }
