@@ -125,7 +125,7 @@
 
         <div class="countdown_container">
             <h2 class="centered_title">Countdown to the Big Day</h2>
-            <div id="defaultCountdown" class="hasCountdown"><span class="countdown_row countdown_show4"><span class="countdown_section"><span class="countdown_amount">1</span><br>Year</span><span class="countdown_section"><span class="countdown_amount">0</span><br>Months</span><span class="countdown_section"><span class="countdown_amount">5</span><br>Days</span><span class="countdown_section"><span class="countdown_amount">20</span><br>Hours</span></span></div>
+            <div id="defaultCountdown" class="hasCountdown"><span class="countdown_row countdown_show4"><span class="countdown_section" id="countdownMonths"><span class="countdown_amount">0</span><br>months</span><span class="countdown_section" id="countdownDays"><span class="countdown_amount">0</span><br>days</span><span class="countdown_section" id="countdownHours"><span class="countdown_amount">0</span><br>hours</span><span class="countdown_section" id="countdownMinutes"><span class="countdown_amount">0</span><br>minutes</span></span></div>
             <div class="rsvp_button"><span class="swirl_left_small"><span class="swirl_right_small"><a href="#">RSVP</a></span></span></div>
         </div>
         <!--<div class="row">
@@ -157,7 +157,7 @@
     <script src="js/bootstrap.min.js"></script>
     
     <!-- Script for the countdown -->
-    <script type="text/javascript" src="js/jquery.countdown.js"></script>
+    <script type="text/javascript" src="js/countdown.js"></script>
 
     <!-- Script to Activate the Carousel -->
     <script>
@@ -166,7 +166,8 @@
     });
     
     $(window).load(function() {
-        $('#defaultCountdown').countdown({until: new Date(2017, 8 - 1, 9, 12), format: 'y-o-d-h'});
+        // Date must be in ISO format ('YYYY-MM-DDTHH:mm:ss.sssZ')
+        setCountdownTimerFor('2017-07-29 14:00:00');
     });
     
     </script>
