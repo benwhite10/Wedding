@@ -222,7 +222,7 @@ span.swirl_right_small{
 	width: 100%;
 }
 
-.title_under, .title_date, .title_front, .countdown_container, .countdown_rtl, .countdown_amount, .about_container, .footer {
+.title_under, .title_date, .title_front, .countdown_container, .countdown_rtl, .countdown_amount, .about_container, .footer, .bridal_party_container {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -299,8 +299,8 @@ span.names_titles {
 }
 
 .about_pic_container:hover .about_pic img{
-	opacity: 0.5;
-	transform: scale(1.1);
+    opacity: 0.5;
+    transform: scale(1.1);
 }
 
 .clear {
@@ -406,4 +406,65 @@ span.swirl_right_transparent{
 
 .footer_menu a:hover {
     text-decoration: none;
+}
+
+.bridal_party_container {
+    width: 100%;
+    min-height: 200px;
+    background: #77ade6;
+}
+
+.bridal_party_container h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #FFF;
+}
+
+.bridal_party_grid {
+    font-size: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.bridal_party_grid_item {
+    display: inline-block;
+    width: calc(25% - 12px);
+    margin: 0 16px 16px 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.bridal_party_grid_item:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.bridal_party_grid_item img {
+    width: 100%;
+    transition: opacity 0.5s, transform 0.5s;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+    outline-offset: -8px;
+}
+
+.bridal_party_grid_item .name_text {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background: #FFF;
+    transition: opacity 0.5s, transform 0.5s;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.bridal_party_grid_item .name_text h4 {
+    line-height: 50px;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    cursor: default;
+}
+
+.bridal_party_grid_item:hover img, .bridal_party_grid_item:hover .name_text{
+    opacity: 0.5;
 }
