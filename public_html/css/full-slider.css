@@ -233,7 +233,7 @@ span.swirl_right{
     padding: 40px 0;
     text-align: center;
 }
-.countdown_rtl {
+/*.countdown_rtl {
     direction: rtl;
 }
 .countdown_holding span {
@@ -257,13 +257,13 @@ span.swirl_right{
     font-size:36px;
     color:#FFFFFF;
     text-transform:lowercase;
-}
-span.countdown_amount {
+}*/
+/*span.countdown_amount {
     font-size:80px;
     color:#FFFFFF;
     font-weight:700;
     letter-spacing:-0.5px;
-}
+}*/
 .countdown_item {
     width: 148px;
     height: 170px;
@@ -285,33 +285,33 @@ span.countdown_amount {
     font-size: 36px;
 }
 .rsvp_button{
-	text-align:center;
-	font-size:30px;
-	font-weight:700;
-	margin:0 0 60px 0;
+    text-align:center;
+    font-size:30px;
+    font-weight:700;
+    margin:0 0 60px 0;
 }
 .rsvp_button a{
-	color:#FFFFFF;
-        text-decoration: none;
+    color:#FFFFFF;
+    text-decoration: none;
 }
 .rsvp_button a:hover{
-	color:#5d594d;
-        cursor: pointer;
+    color:#5d594d;
+    cursor: pointer;
         
 }
 span.swirl_left_small{
-	display:inline-block;
-	background:url(../images/swirl_left_small.png) no-repeat left;
-	padding:0 0 0 100px;
+    display:inline-block;
+    background:url(../images/swirl_left_small.png) no-repeat left;
+    padding:0 0 0 100px;
 }
 span.swirl_right_small{
-	display:inline-block;
-	background:url(../images/swirl_right_small.png) no-repeat right;
-	padding:0 100px 0 0px;
+    display:inline-block;
+    background:url(../images/swirl_right_small.png) no-repeat right;
+    padding:0 100px 0 0px;
 }
 .countdown_descr {
-	display: block;
-	width: 100%;
+    display: block;
+    width: 100%;
 }
 
 .title_under, .title_date, .title_front, .countdown_container, .countdown_rtl, .countdown_amount, .about_container, .footer, .bridal_party_container, .navigation_bar {
