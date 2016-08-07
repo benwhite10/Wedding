@@ -87,22 +87,22 @@ function calculateMonths(countdownDate, currentDate) {
 
 function updateMinutes(minutes) {
     var text = minutes > 1 ? "minutes" : "minute";
-    $('#countdownMinutes').html('<span class="countdown_amount">' + minutes + '</span><br>' + text);
+    $('#countdownMinutes').html('<h1>' + minutes + '</h1><h4>' + text + '</h4>');
 }
 
 function updateHours(hours) {
     var text = hours > 1 ? "hours" : "hour";
-    $('#countdownHours').html('<span class="countdown_amount">' + hours + '</span><br>' + text);
+    $('#countdownHours').html('<h1>' + hours + '</h1><h4>' + text + '</h4>');
 }
 
 function updateDays(days) {
     var text = days > 1 ? "days" : "day";
-    $('#countdownDays').html('<span class="countdown_amount">' + days + '</span><br>' + text);
+    $('#countdownDays').html('<h1>' + days + '</h1><h4>' + text + '</h4>');
 }
 
 function updateMonths(months) {
     var text = months > 1 ? "months" : "month";
-    $('#countdownMonths').html('<span class="countdown_amount">' + months + '</span><br>' + text);
+    $('#countdownMonths').html('<h1>' + months + '</h1><h4>' + text + '</h4>');
 }
 
 function daysInMonth(month, year) {
