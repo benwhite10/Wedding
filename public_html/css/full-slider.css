@@ -90,7 +90,7 @@ body {
     margin: 10px auto;
     color: #FFF;
     height: 30px;
-    margin-left: -20px;
+    padding: 0px;
 }
 
 .navigation_bar_list li {
@@ -510,6 +510,7 @@ span.swirl_right_transparent{
     font-size: 0;
     width: 100%;
     margin-top: 30px;
+    padding: 0;
 }
 
 .bridal_party_grid_item {
@@ -612,7 +613,12 @@ span.swirl_right_transparent{
     }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 778px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    /*
+    * == iPads ==
+    */
+    
     .navigation_bar_list li a {
         font-size: 1.8em;
     }
@@ -640,5 +646,128 @@ span.swirl_right_transparent{
     
     .footer_menu li {
         font-size: 26px;
+    }
+}
+
+@media (max-width: 414px) {
+    .navigation_bar {
+        padding: 0 10px;
+    }
+    span.swirl_left {
+        background: url(../images/swirl_left_small.png) no-repeat left;
+        padding: 0 0 0 93px;
+    }
+    
+    span.swirl_right {
+        background: url(../images/swirl_right_small.png) no-repeat right;
+        padding: 10px 93px 10px 0px;
+    }
+    
+    .bridal_party_grid {
+        padding: 0 10px;
+    }
+    
+    .bridal_party_grid_item {
+        width: 100%;
+        margin: 0 0 40px 0;
+        background: #000;
+        overflow: hidden;
+    }
+    
+    .bridal_party_grid_item img {
+        outline-offset: -16px;
+    }
+    
+    .bridal_party_grid_item .name_text {
+        height: 120px;
+    }
+    
+    .bridal_party_grid_item .name_text h4{
+        line-height: 50px;
+        font-size: 28px;
+    }
+    
+    span.swirl_left_transparent {
+        padding: 0 0 0 120px;
+    }
+    
+    span.swirl_right_transparent {
+        padding: 0 120px 0 0;
+    }
+}
+
+@media (max-width: 440px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    /*
+    * == iPhones ==
+    */
+    
+    .navigation_bar_list li a {
+        font-size: 1.1em;
+    }
+    
+    span.names_titles, .about_container h2 {
+        font-size: 34px;
+    }
+    
+    .bridal_party_container h2 {
+        font-size: 36px;
+    }
+    
+    .countdown_container h2 {
+        font-size: 34px;
+    }
+    
+    .footer_menu li {
+        font-size: 20px;
+    }
+    
+    .title {
+        font-size: 70px;
+    }
+    
+    .title_date {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 360px){
+    .navigation_bar_list li a {
+        font-size: 0.8em;
+    }
+    
+    .footer_menu li {
+        font-size: 16px;
+    }
+    
+    .title_front {
+        font-size: 20px;
+    }
+    
+    .title_front > .char1 {
+        transform: translateX(-1px) translateY(50px) rotate(-42deg) !important;
+    }
+    
+    .title_front > .char22 {
+        transform: translateX(1px) translateY(52px) rotate(42deg) !important; 
+    }
+    
+    .title {
+        font-size: 50px;
+    }
+    
+    .title_date {
+        font-size: 22px;
+        padding: 0 0 10px 0;
+    }
+    
+    span.swirl_left_transparent {
+        background: url(../images/swirl_left_transparent_small.png) no-repeat left;
+        padding: 0 0 0 80px;
+    }
+    
+    span.swirl_right_transparent {
+        background: url(../images/swirl_right_transparent_small.png) no-repeat right;
+        padding: 0 80px 0 0;
     }
 }
