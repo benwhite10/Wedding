@@ -44,6 +44,7 @@ body {
     width:1100px;
     margin:auto;
     padding:40px 0;
+    background: transparent;
 }
 
 /*
@@ -70,15 +71,55 @@ body {
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #77ade6;
-  cursor: pointer;
-  background: url(../images/menu_bullet.png) no-repeat left;
+    color: #77ade6;
+    cursor: pointer;
+    background: url(../images/menu_bullet.png) no-repeat left;
 }
 
+.navigation_bar {
+    width: 100%;
+    padding: 0px 40px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+    text-align: center;
+}
+
+.navigation_bar_list {
+    margin: 10px auto;
+    color: #FFF;
+    height: 30px;
+    margin-left: -20px;
+}
+
+.navigation_bar_list li {
+    display: inline;
+    line-height: 30px;
+    margin: 0 10px;
+}
+
+.navigation_bar_list li a {
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.navigation_bar_list li a:hover, .navigation_bar_list li a.selected {
+    color: #77ade6;
+    background: url(../images/menu_bullet.png) no-repeat left;
+}
+  
 /*
 * === Carousel ===
 */
 
+.carousel {
+    min-height: 700px;
+}
 .carousel-indicators li {
   display: inline-block;
   width: 19px;
@@ -167,11 +208,16 @@ span.swirl_right{
 .container {
     width: 100%;
     padding: 0px;
+    background: #77ade6;
 }
 .countdown_container {
     background-color: #77ade6;
     height: auto;
     padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: none;
 }
 .countdown_container h2 {
     text-align: center;
@@ -185,29 +231,29 @@ span.swirl_right{
     text-align: center;
 }
 .countdown_rtl {
-	direction: rtl;
+    direction: rtl;
 }
 .countdown_holding span {
-	color: #888;
+    color: #888;
 }
 .countdown_row {
-	clear: both;
-	width: 100%;
-	padding:0px;
-	text-align: center;
+    clear: both;
+    width: 100%;
+    padding:0px;
+    text-align: center;
 }
 .countdown_section {
-	display:inline-block;
-	text-align: center;
-	width:148px;
-	height:170px;
-	padding:0;
-	margin:0 12px;
-	background:url(../images/countdown_frame.png) no-repeat center;
-	text-align:center;
-	font-size:36px;
-	color:#FFFFFF;
-	text-transform:lowercase;
+    display:inline-block;
+    text-align: center;
+    width:148px;
+    height:170px;
+    padding:0;
+    margin:0 12px;
+    background:url(../images/countdown_frame.png) no-repeat center;
+    text-align:center;
+    font-size:36px;
+    color:#FFFFFF;
+    text-transform:lowercase;
 }
 span.countdown_amount {
 	font-size:80px;
@@ -245,11 +291,11 @@ span.swirl_right_small{
 	width: 100%;
 }
 
-.title_under, .title_date, .title_front, .countdown_container, .countdown_rtl, .countdown_amount, .about_container, .footer, .bridal_party_container {
+.title_under, .title_date, .title_front, .countdown_container, .countdown_rtl, .countdown_amount, .about_container, .footer, .bridal_party_container, .navigation_bar {
     font-family: 'Open Sans', sans-serif;
 }
 
-.countdown_row, .countdown_section, .about_andsign{
+.countdown_row, .countdown_section, .about_andsign, .about_andsign_two {
     font-family: 'Clicker Script'
 }
 
@@ -265,7 +311,7 @@ span.swirl_right_small{
     clear: both;
 }
 
-.about_andsign {
+.about_andsign, .about_andsign_two {
     width:100%;
     color:#77ade6;
     margin: auto;
@@ -273,19 +319,27 @@ span.swirl_right_small{
     font-size: 120px;
 }
 
+.about_andsign {
+    display: block;
+}
+
+.about_andsign_two {
+    display: none;
+}
+
 .about_container > .full_width_centered {
     margin-top: -171px;
 }
 
 .left_col {
-    width: 530px;
+    width: calc(50% - 20px);
     float: left;
     margin: 0 40px 80px 0;
     clear: both;
 }
 
 .right_col {
-    width: 530px;
+    width: calc(50% - 20px);
     float: left;
     margin: 0 0 80px 0;
 }
@@ -316,7 +370,7 @@ span.names_titles {
     position: relative;
     width: 100%;
     height: auto;
-    background: #F00;
+    background: #444;
 }
 
 .about_pic_container:hover .about_pic img{
@@ -480,7 +534,7 @@ span.swirl_right_transparent{
 
 .bridal_party_grid_item .name_text {
     width: 100%;
-    height: 50px;
+    height: 80px;
     text-align: center;
     background: #FFF;
     transition: opacity 0.5s, transform 0.5s;
@@ -488,13 +542,103 @@ span.swirl_right_transparent{
 }
 
 .bridal_party_grid_item .name_text h4 {
-    line-height: 50px;
+    line-height: 30px;
     margin: 0;
     font-weight: 600;
     letter-spacing: -0.5px;
     cursor: default;
+    padding: 10px;
+    font-size: 18px;
 }
 
 .bridal_party_grid_item:hover img, .bridal_party_grid_item:hover .name_text{
     opacity: 0.5;
+}
+      
+/*
+* === Media Queries ===
+*/
+
+@media (max-width: 1222px) {
+    /*
+    * == Small Desktop Window ==
+    */
+    
+    .full_width_centered {
+        width: 90%;
+    }
+}
+
+@media (max-width: 778px) {
+    /*
+    * == Tablets ==
+    */
+    
+    .bridal_party_grid_item {
+        width: calc(50% - 8px);
+        margin: 0 16px 16px 0;
+        background: #000;
+        overflow: hidden;
+    }
+    
+    .bridal_party_grid_item:nth-of-type(2n) {
+        margin-right: 0;
+    }
+    
+    .bridal_party_grid_item img {
+        outline-offset: -16px;
+    }
+    
+    .countdown_container {
+        max-width: 500px;
+        width: 80%;
+    }
+    
+    .about_andsign {
+        display: none;
+    }
+    
+    .about_container > .full_width_centered {
+        margin-top: 0px;
+    }
+    
+    .left_col, .right_col {
+        width: 100%;
+        margin: 0 0 40px 0;
+    }
+    
+    .about_andsign_two {
+        display: block;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .navigation_bar_list li a {
+        font-size: 1.8em;
+    }
+    
+    span.names_titles, .about_container h2 {
+        font-size: 40px;
+    }
+    
+    .bridal_party_container h2 {
+        font-size: 46px;
+    }
+    
+    .countdown_container h2 {
+        font-size: 40px;
+    }
+    
+    .bridal_party_grid_item .name_text {
+        height: 120px;
+    }
+    
+    .bridal_party_grid_item .name_text h4{
+        line-height: 50px;
+        font-size: 28px;
+    }
+    
+    .footer_menu li {
+        font-size: 26px;
+    }
 }
