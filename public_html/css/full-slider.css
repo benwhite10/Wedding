@@ -760,7 +760,7 @@ span.about_picframe {
     .bridal_party_grid_item {
         width: calc(50% - 8px);
         margin: 0 16px 16px 0;
-        background: #000;
+        background: transparent;
         overflow: hidden;
     }
     
@@ -880,8 +880,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .bridal_party_grid_item {
         width: 100%;
         margin: 0 0 40px 0;
-        background: #000;
-        overflow: hidden;
     }
     
     .bridal_party_grid_item img {
