@@ -485,7 +485,7 @@ span.about_picframe {
     padding: 20px 0;
 }
 
-.accommodation_container h1 {
+.accommodation_container h1, h4 {
     color: #77ade6;
     font-family: 'Open Sans', sans-serif;
     padding: 0;
@@ -493,6 +493,11 @@ span.about_picframe {
     text-align: center;
     font-weight: 700;
     letter-spacing: -0.5px;
+}
+
+.accommodation_container h4 {
+	font-size: 22px;
+	font-weight: 400;
 }
 
 .accommodation_container p {
@@ -509,7 +514,7 @@ span.about_picframe {
 }
 
 .accommodation_container_columns p {
-    text-align: justify;
+    text-align: center;
 }
 
 .accommodation_container_left_col {
@@ -520,9 +525,8 @@ span.about_picframe {
 }
 
 .accommodation_container_right_col {
-    display: inline-block;
-    width: calc(50% - 10px);
-    margin-left: 10px;
+    width: 80%;
+    margin: 0 auto;
     vertical-align: top;
 }
 
@@ -536,6 +540,10 @@ span.about_picframe {
     height: 250px;
     border: #000 solid 1px;
     margin: 20px auto;
+}
+
+.hotel_link:hover {
+	text-decoration: pointer;
 }
 
 /*
