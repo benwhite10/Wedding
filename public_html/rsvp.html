@@ -36,10 +36,10 @@
                 <a href="index.html">HOME</a>
             </li>
             <li>
-                <a href="wedding.html" class="selected">THE WEDDING</a>
+                <a href="wedding.html">THE WEDDING</a>
             </li>
             <li>
-            	<a href="rsvp.html">RSVP</a>
+            	<a href="rsvp.html" class="selected">RSVP</a>
             </li>
         </ul>
     </div>
@@ -106,39 +106,32 @@
     <div class="container">
         <div class="location_container">
             <div class="location_container_title">
-                <h1>Location</h1>
-            </div>
-            <div class="location_container_map">
-                <iframe id="google_map" frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ337IGzIIdkgRK-351oJJ8uY&key=AIzaSyCVq_vLyEQxvtnHO7jPUFF0_v2C8NRVDq0" 
-                    allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="accommodation_container" id="accommodation">
-            <div class="accommodation_container_title">
-                <h1>Accommodation</h1>
-            </div>
-            <div class="accommodation_container_columns">
-                <div class="accommodation_container_right_col">
-                    <h1>Holiday Inn Sutton</h1>
-                    <p><br>The bridal party will be staying at the Holiday Inn Sutton, just a 5 minute drive from Nonsuch Mansion. <br><br> If you would like to join us, we have made a group reservation with a combination of double, twin and family rooms all available at a discounted rate of £95 per night. The rate <b>includes breakfast</b> as well as full access to the leisure facilities, including swimming pool, jacuzzi, sauna and fully equipped gym.</p>
-                    <p>The group reservation is valid for the 28th and 29th July should you require both nights. Bookings can be made up to the 29th June 2017.</p>
-                    <p>To book a room with the group reservation either:</p>
-                    <ul type="disc">
-                    	<li><p>&#9679; Visit the following <a class="hotel_link" href="http://www.holidayinn.com/redirect?path=hd&brandCode=hi&localeCode=en&regionCode=1&hotelCode=lonsu&_PMID=99801505&GPC=bwt">link</a> and enter the group code <b>BWT</b>. You can find this under 'more options' </p></li>
-                    	<li><p>&#9679; Phone 0800 40 50 60 and quote the same code, <b>BWT</b>.<p></li>
-                    </ul>
-                    <p>If you have any issues please contact us directly on either 07411 250 857 (Ben) or 07834 082 357 (Ayi).</p>
-                </div>
-            </div>
-        </div>
-        <div class="location_container" id="gift_list">
-            <div class="location_container_title">
-                <h1>Gift List</h1>
+                <h1>RSVP</h1>
             </div>
             <div class="accommodation_container_columns">
                 <div class="gift_list_container_right_col">
-                    <p>If you are thinking of giving us a gift to help us on our way, we have registered a gift list with <a href="http://www.johnlewis.com">John Lewis</a>. <br> Our gift list number is <b>703237</b> and the list will open on the 17th June 2017, it will remain open for 8 weeks after this date.</p>
+                    <p>Please RSVP on or before the 1st June 2017.</p>
+                    <br>
+                    <form class="rsvp_form" action="mailto:rsvp@whitetunonwedding.co.uk?subject=RSVP" method="post" enctype="text/plain">
+						<label for="name">Name(s): </label><input type="text" name="Name(s)"><br>
+						<br>
+						<div class="rsvp_radios">
+							<input type="radio" name="RSVP" value="Accepts With Pleasure"><label class="radio_label" for="RSVP">Accepts With Pleasure</label>
+  							<input type="radio" name="RSVP" value="Declines With Regret"><label class="radio_label" for="RSVP">Declines With Regret</label><br>
+						</div>
+						<p><br>Please initial menu choices for each guest</p>
+						<h3 style="text-align:center;">Main</h3>
+						<label for="Duck Breast">Duck Breast</label><input type="text" name="Duck Breast"><br>
+						<label for="Sea Bass">Sea Bass</label><input type="text" name="Sea Bass"><br>
+						<label for="Vegetarian">Vegetarian</label><input type="text" name="Vegetarian"><br>
+						<h3 style="text-align:center;">Dessert</h3>
+						<label for="Chocolate Delice">Chocolate Delice</label><input type="text" name="Chocolate Delice"><br>
+						<label for="Strawberry Surprise">Strawberry Surprise</label><input type="text" name="Strawberry Surprise"><br>
+						<br>
+						<label for="Dietary Requirements">Dietary requirements:</label><input type="text" name="Dietary Requirements"><br><br>
+						<input type="reset" value="Reset">
+						<input type="submit" value="Send">
+					</form>
                 </div>
             </div>
         </div>

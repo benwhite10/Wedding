@@ -504,7 +504,7 @@ span.about_picframe {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     letter-spacing: -0.5px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .accommodation_container_columns {
@@ -530,6 +530,14 @@ span.about_picframe {
     vertical-align: top;
 }
 
+.gift_list_container_right_col > p {
+	width: 80%;
+    margin: 0 auto;
+    vertical-align: top;
+    font-size: 16px;
+	color: #FFF;
+}
+
 .accommodation_container_columns h1 {
     font-size: 26px;
     font-weight: 400;
@@ -544,6 +552,58 @@ span.about_picframe {
 
 .hotel_link:hover {
 	text-decoration: pointer;
+}
+
+.rsvp_form {
+	border: 1px solid #FFF; 
+	padding: 10px;
+	color: #FFF;
+}
+
+.rsvp_form label {
+	width: 170px;
+	height: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.rsvp_form input[type="text"]{
+	color: #000;
+	outline: none;
+	height: 30px;
+	line-height: 30px;
+	width: calc(100% - 170px);
+	padding: 0 10px;
+}
+
+.rsvp_form input[type="radio"]{
+	font-size: 16px;
+}
+
+.rsvp_form label.radio_label {
+	margin-left: 10px;
+	width: calc(50% - 30px);
+}
+
+.rsvp_radios {
+	width: 65%;
+	height: auto;
+	margin-left: 25%;
+}
+
+.rsvp_form input[type="submit"], .rsvp_form input[type="reset"] {
+	margin: 0px 20px;
+	width: calc(50% - 50px);
+	height: 40px;
+	background: #FFF;
+	color: #77ade6;
+	border: none;
+	outline: none;
+}
+
+.rsvp_form input[type="submit"]:hover, .rsvp_form input[type="reset"]:hover {
+	background: rgba(255, 255, 255, 0.5);
 }
 
 /*
