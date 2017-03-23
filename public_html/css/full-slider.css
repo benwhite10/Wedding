@@ -485,7 +485,7 @@ span.about_picframe {
     padding: 20px 0;
 }
 
-.accommodation_container h1 {
+.accommodation_container h1, h4 {
     color: #77ade6;
     font-family: 'Open Sans', sans-serif;
     padding: 0;
@@ -495,11 +495,16 @@ span.about_picframe {
     letter-spacing: -0.5px;
 }
 
+.accommodation_container h4 {
+	font-size: 22px;
+	font-weight: 400;
+}
+
 .accommodation_container p {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     letter-spacing: -0.5px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .accommodation_container_columns {
@@ -509,7 +514,7 @@ span.about_picframe {
 }
 
 .accommodation_container_columns p {
-    text-align: justify;
+    text-align: center;
 }
 
 .accommodation_container_left_col {
@@ -520,10 +525,17 @@ span.about_picframe {
 }
 
 .accommodation_container_right_col {
-    display: inline-block;
-    width: calc(50% - 10px);
-    margin-left: 10px;
+    width: 80%;
+    margin: 0 auto;
     vertical-align: top;
+}
+
+.gift_list_container_right_col > p {
+	width: 80%;
+    margin: 0 auto;
+    vertical-align: top;
+    font-size: 16px;
+	color: #FFF;
 }
 
 .accommodation_container_columns h1 {
@@ -536,6 +548,62 @@ span.about_picframe {
     height: 250px;
     border: #000 solid 1px;
     margin: 20px auto;
+}
+
+.hotel_link:hover {
+	text-decoration: pointer;
+}
+
+.rsvp_form {
+	border: 1px solid #FFF; 
+	padding: 10px;
+	color: #FFF;
+}
+
+.rsvp_form label {
+	width: 170px;
+	height: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.rsvp_form input[type="text"]{
+	color: #000;
+	outline: none;
+	height: 30px;
+	line-height: 30px;
+	width: calc(100% - 170px);
+	padding: 0 10px;
+}
+
+.rsvp_form input[type="radio"]{
+	font-size: 16px;
+}
+
+.rsvp_form label.radio_label {
+	margin-left: 10px;
+	width: calc(50% - 30px);
+}
+
+.rsvp_radios {
+	width: 65%;
+	height: auto;
+	margin-left: 25%;
+}
+
+.rsvp_form input[type="submit"], .rsvp_form input[type="reset"] {
+	margin: 0px 20px;
+	width: calc(50% - 50px);
+	height: 40px;
+	background: #FFF;
+	color: #77ade6;
+	border: none;
+	outline: none;
+}
+
+.rsvp_form input[type="submit"]:hover, .rsvp_form input[type="reset"]:hover {
+	background: rgba(255, 255, 255, 0.5);
 }
 
 /*
@@ -666,6 +734,7 @@ span.about_picframe {
 /* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 .flip-container, .front, .back {
@@ -677,14 +746,13 @@ span.about_picframe {
 .flipper {
     transition: 0.6s;
     transform-style: preserve-3d;
-
     position: relative;
 }
 
 /* hide back of pane during swap */
 .front, .back {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -695,11 +763,13 @@ span.about_picframe {
     z-index: 2;
     /* for firefox 31 */
     transform: rotateY(0deg);
+    webkit-transform: rotateY(0deg);
 }
 
 /* back, initially hidden pane */
 .back {
     transform: rotateY(180deg);
+    webkit-transform: rotateY(180deg);
 }
       
 /*
