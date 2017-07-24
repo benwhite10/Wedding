@@ -530,6 +530,16 @@ span.about_picframe {
     vertical-align: top;
 }
 
+.gift_list_container_right_col > h2 {
+	width: 80%;
+    margin: 0 auto;
+    vertical-align: top;
+    font-size: 22px;
+    font-weight: normal;
+	color: #FFF;
+	text-align: center;
+}
+
 .gift_list_container_right_col > p {
 	width: 80%;
     margin: 0 auto;
